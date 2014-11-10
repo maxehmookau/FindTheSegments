@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4DDCBF331A10D6E700264422 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDCBF321A10D6E700264422 /* AVFoundation.framework */; };
 		4DDCBF351A10DB8700264422 /* collect.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 4DDCBF341A10DB8700264422 /* collect.WAV */; };
+		4DDCBF371A10F44A00264422 /* segmenticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DDCBF361A10F44A00264422 /* segmenticon.png */; };
 		4DEDF1D81A10C6EC001F4D0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDF1D71A10C6EC001F4D0D /* main.m */; };
 		4DEDF1DB1A10C6EC001F4D0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDF1DA1A10C6EC001F4D0D /* AppDelegate.m */; };
 		4DEDF1DE1A10C6EC001F4D0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDF1DD1A10C6EC001F4D0D /* ViewController.m */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		4DDCBF321A10D6E700264422 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4DDCBF341A10DB8700264422 /* collect.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = collect.WAV; sourceTree = "<group>"; };
+		4DDCBF361A10F44A00264422 /* segmenticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = segmenticon.png; sourceTree = "<group>"; };
 		4DEDF1D21A10C6EC001F4D0D /* FindTheSegments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindTheSegments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEDF1D61A10C6EC001F4D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DEDF1D71A10C6EC001F4D0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		4DEDF1D41A10C6EC001F4D0D /* FindTheSegments */ = {
 			isa = PBXGroup;
 			children = (
+				4DDCBF361A10F44A00264422 /* segmenticon.png */,
 				4DDCBF341A10DB8700264422 /* collect.WAV */,
 				4DEDF1D91A10C6EC001F4D0D /* AppDelegate.h */,
 				4DEDF1DA1A10C6EC001F4D0D /* AppDelegate.m */,
@@ -179,6 +182,11 @@
 				TargetAttributes = {
 					4DEDF1D11A10C6EC001F4D0D = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					4DEDF1EA1A10C6EC001F4D0D = {
 						CreatedOnToolsVersion = 6.1;
@@ -211,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DEDF1E11A10C6EC001F4D0D /* Main.storyboard in Resources */,
+				4DDCBF371A10F44A00264422 /* segmenticon.png in Resources */,
 				4DEDF1E61A10C6EC001F4D0D /* LaunchScreen.xib in Resources */,
 				4DEDF1E31A10C6EC001F4D0D /* Images.xcassets in Resources */,
 				4DDCBF351A10DB8700264422 /* collect.WAV in Resources */,

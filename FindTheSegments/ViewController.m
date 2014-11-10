@@ -36,7 +36,7 @@
 - (void)locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region {
     switch (state) {
         case CLRegionStateInside:
-            [_locationManager startRangingBeaconsInRegion:_beaconRegion];
+            [self locationManager:_locationManager didEnterRegion:region];
             break;
             
         default:
@@ -59,6 +59,11 @@
 
 - (void)didStandImmediatelyNextToBeacon:(CLBeacon *)beacon {
     if ([_appState[beacon.minor] isEqual:@NO]) {
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+        notification.alertBody = @"You are stood right next to a beacon!";
+        notification.alertAction = @"keep searching!";
+        notification.fireDate = [NSDate date];
+        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
         [_player play];
     }
     _appState[beacon.minor] = @YES;
