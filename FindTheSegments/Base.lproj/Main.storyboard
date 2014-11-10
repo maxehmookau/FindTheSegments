@@ -19,19 +19,34 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yI-Kw-SnD">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
-                                <color key="backgroundColor" red="1" green="0.49290619459130114" blue="0.47507128492829687" alpha="1" colorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-dm-Mkm">
+                                        <rect key="frame" x="8" y="8" width="40" height="30"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressResetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aWD-gs-BMk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Kmn-dm-Mkm" firstAttribute="top" secondItem="9yI-Kw-SnD" secondAttribute="top" constant="8" id="Gfj-oK-7Pj"/>
+                                    <constraint firstItem="Kmn-dm-Mkm" firstAttribute="leading" secondItem="9yI-Kw-SnD" secondAttribute="leading" constant="8" id="Wp3-EB-mOt"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3XT-HL-zAO">
                                 <rect key="frame" x="300" y="0.0" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.54689542641860822" green="0.63575314341294309" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TN1-DO-PyI">
                                 <rect key="frame" x="0.0" y="300" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.65317141375519161" green="0.90439399171270718" blue="0.67253948687440657" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzm-KA-pfS">
                                 <rect key="frame" x="300" y="300" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.90439399171270718" green="0.88794437058013975" blue="0.63023803628766883" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -54,6 +69,12 @@
                             <constraint firstItem="wzm-KA-pfS" firstAttribute="top" secondItem="3XT-HL-zAO" secondAttribute="bottom" id="reg-df-iBE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueBeaconView" destination="3XT-HL-zAO" id="Aep-OK-cmO"/>
+                        <outlet property="greenBeaconView" destination="TN1-DO-PyI" id="3HY-vC-HPS"/>
+                        <outlet property="redBeaconView" destination="9yI-Kw-SnD" id="XcM-4t-lb7"/>
+                        <outlet property="yellowBeaconView" destination="wzm-KA-pfS" id="CJI-KO-Xk9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

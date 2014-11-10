@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DDCBF331A10D6E700264422 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDCBF321A10D6E700264422 /* AVFoundation.framework */; };
+		4DDCBF351A10DB8700264422 /* collect.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 4DDCBF341A10DB8700264422 /* collect.WAV */; };
 		4DEDF1D81A10C6EC001F4D0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDF1D71A10C6EC001F4D0D /* main.m */; };
 		4DEDF1DB1A10C6EC001F4D0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDF1DA1A10C6EC001F4D0D /* AppDelegate.m */; };
 		4DEDF1DE1A10C6EC001F4D0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDF1DD1A10C6EC001F4D0D /* ViewController.m */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DDCBF321A10D6E700264422 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4DDCBF341A10DB8700264422 /* collect.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = collect.WAV; sourceTree = "<group>"; };
 		4DEDF1D21A10C6EC001F4D0D /* FindTheSegments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindTheSegments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEDF1D61A10C6EC001F4D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DEDF1D71A10C6EC001F4D0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDCBF331A10D6E700264422 /* AVFoundation.framework in Frameworks */,
 				4DEDF1FC1A10C7F3001F4D0D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +71,7 @@
 		4DEDF1C91A10C6EC001F4D0D = {
 			isa = PBXGroup;
 			children = (
+				4DDCBF321A10D6E700264422 /* AVFoundation.framework */,
 				4DEDF1FB1A10C7F3001F4D0D /* CoreLocation.framework */,
 				4DEDF1D41A10C6EC001F4D0D /* FindTheSegments */,
 				4DEDF1EE1A10C6EC001F4D0D /* FindTheSegmentsTests */,
@@ -85,6 +91,7 @@
 		4DEDF1D41A10C6EC001F4D0D /* FindTheSegments */ = {
 			isa = PBXGroup;
 			children = (
+				4DDCBF341A10DB8700264422 /* collect.WAV */,
 				4DEDF1D91A10C6EC001F4D0D /* AppDelegate.h */,
 				4DEDF1DA1A10C6EC001F4D0D /* AppDelegate.m */,
 				4DEDF1DC1A10C6EC001F4D0D /* ViewController.h */,
@@ -206,6 +213,7 @@
 				4DEDF1E11A10C6EC001F4D0D /* Main.storyboard in Resources */,
 				4DEDF1E61A10C6EC001F4D0D /* LaunchScreen.xib in Resources */,
 				4DEDF1E31A10C6EC001F4D0D /* Images.xcassets in Resources */,
+				4DDCBF351A10DB8700264422 /* collect.WAV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +424,7 @@
 				4DEDF1F71A10C6EC001F4D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DEDF1F81A10C6EC001F4D0D /* Build configuration list for PBXNativeTarget "FindTheSegmentsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +433,7 @@
 				4DEDF1FA1A10C6EC001F4D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
