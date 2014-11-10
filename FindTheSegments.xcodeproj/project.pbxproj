@@ -14,6 +14,7 @@
 		4DEDF1E31A10C6EC001F4D0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEDF1E21A10C6EC001F4D0D /* Images.xcassets */; };
 		4DEDF1E61A10C6EC001F4D0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DEDF1E41A10C6EC001F4D0D /* LaunchScreen.xib */; };
 		4DEDF1F21A10C6EC001F4D0D /* FindTheSegmentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDF1F11A10C6EC001F4D0D /* FindTheSegmentsTests.m */; };
+		4DEDF1FC1A10C7F3001F4D0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEDF1FB1A10C7F3001F4D0D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4DEDF1EB1A10C6EC001F4D0D /* FindTheSegmentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindTheSegmentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEDF1F01A10C6EC001F4D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DEDF1F11A10C6EC001F4D0D /* FindTheSegmentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindTheSegmentsTests.m; sourceTree = "<group>"; };
+		4DEDF1FB1A10C7F3001F4D0D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEDF1FC1A10C7F3001F4D0D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		4DEDF1C91A10C6EC001F4D0D = {
 			isa = PBXGroup;
 			children = (
+				4DEDF1FB1A10C7F3001F4D0D /* CoreLocation.framework */,
 				4DEDF1D41A10C6EC001F4D0D /* FindTheSegments */,
 				4DEDF1EE1A10C6EC001F4D0D /* FindTheSegmentsTests */,
 				4DEDF1D31A10C6EC001F4D0D /* Products */,
